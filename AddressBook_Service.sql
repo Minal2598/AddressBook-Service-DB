@@ -17,3 +17,19 @@ create table AddressBook(
     primary key (id)
 
 );
+
+select * from  AddressBook;
+
+
+
+#UC3
+
+insert into AddressBook (first_name,last_name,address,city,state,zip,phone_number,email) values
+('Minal','Patil','Subhashnagar','Alibag','maharashtra',402108,5864764867,'minal@gmail.com'),
+('Kalpesh','Patil','Akurdi','Pune','maharashtra',405643,5364764557,'kp@gmail.com'),
+('Prachi','Mankar','Nerul','NaviMumbai','maharashtra',754643,5364764232,'prach@gmail.com');
+
+
+
+
+

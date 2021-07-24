@@ -38,7 +38,14 @@ update AddressBook set Address = 'Gandhinagar' where first_name = 'Minal';
 update AddressBook set zip = 288879 where first_name = 'Minal';  
 update AddressBook set phone_number = 9852988879 where first_name = 'Minal';  
 update AddressBook set email = 'minu@yahoo.com' where first_name = 'Minal';  
+update AddressBook set email = 'kalpesh@yahoo.com',
+city = 'panvel',
+state = 'Maharashtra'
+ where first_name = 'Kalpesh';  
 
+#UC5
+delete from AddressBook
+WHERE first_name = 'Minal';
 
 
 

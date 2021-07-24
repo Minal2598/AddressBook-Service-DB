@@ -66,6 +66,9 @@ Alter table AddressBook add type varchar(15) after last_name;
 update  AddressBook set type='Family' where first_name ='Kalpesh';
 update  AddressBook set type='Friends' where first_name ='Prachi';
 
+#UC10
+SELECT COUNT(type) AS Number_Of_Contact_Person 
+FROM AddressBook;
 
 
 

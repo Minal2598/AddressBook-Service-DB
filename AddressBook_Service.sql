@@ -51,6 +51,10 @@ WHERE first_name = 'Minal';
 select * from AddressBook
 where city = 'NaviMumbai' or state = 'Maharashtra';
 
+#UC7
+SELECT COUNT(city or state)
+FROM AddressBook;
+
 
 
 

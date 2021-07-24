@@ -55,6 +55,12 @@ where city = 'NaviMumbai' or state = 'Maharashtra';
 SELECT COUNT(city or state)
 FROM AddressBook;
 
+#UC8
+select first_name,
+    city
+  from AddressBook
+  order by city asc;
+
 
 
 

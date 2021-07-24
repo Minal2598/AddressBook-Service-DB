@@ -60,6 +60,14 @@ select first_name,
     city
   from AddressBook
   order by city asc;
+  
+  #UC9
+Alter table AddressBook add type varchar(15) after last_name;
+update  AddressBook set type='Family' where first_name ='Kalpesh';
+update  AddressBook set type='Friends' where first_name ='Prachi';
+
+
+
 
 
 

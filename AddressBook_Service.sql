@@ -29,6 +29,19 @@ insert into AddressBook (first_name,last_name,address,city,state,zip,phone_numbe
 ('Kalpesh','Patil','Akurdi','Pune','maharashtra',405643,5364764557,'kp@gmail.com'),
 ('Prachi','Mankar','Nerul','NaviMumbai','maharashtra',754643,5364764232,'prach@gmail.com');
 
+#UC4
+
+select city from AddressBook where first_name = 'Minal';
+update AddressBook set city = 'surat' where first_name = 'Minal'; 
+update AddressBook set state = 'Gujrat' where first_name = 'Minal'; 
+update AddressBook set Address = 'Gandhinagar' where first_name = 'Minal';
+update AddressBook set zip = 288879 where first_name = 'Minal';  
+update AddressBook set phone_number = 9852988879 where first_name = 'Minal';  
+update AddressBook set email = 'minu@yahoo.com' where first_name = 'Minal';  
+
+
+
+
 
 
 

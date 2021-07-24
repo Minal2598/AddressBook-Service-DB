@@ -47,6 +47,12 @@ state = 'Maharashtra'
 delete from AddressBook
 WHERE first_name = 'Minal';
 
+#UC6
+select * from AddressBook
+where city = 'NaviMumbai' or state = 'Maharashtra';
+
+
+
 
 
 

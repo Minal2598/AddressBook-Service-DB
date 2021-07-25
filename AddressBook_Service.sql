@@ -29,6 +29,7 @@ insert into AddressBook (first_name,last_name,address,city,state,zip,phone_numbe
 ('Kalpesh','Patil','Akurdi','Pune','maharashtra',405643,5364764557,'kp@gmail.com'),
 ('Prachi','Mankar','Nerul','NaviMumbai','maharashtra',754643,5364764232,'prach@gmail.com');
 
+
 #UC4
 
 select city from AddressBook where first_name = 'Minal';
@@ -63,12 +64,21 @@ select first_name,
   
   #UC9
 Alter table AddressBook add type varchar(15) after last_name;
-update  AddressBook set type='Family' where first_name ='Kalpesh';
+update  AddressBook set type='Family' where first_name ='Minal';
+update  AddressBook set type='Profession' where first_name ='Kalpesh';
 update  AddressBook set type='Friends' where first_name ='Prachi';
 
 #UC10
 SELECT COUNT(type) AS Number_Of_Contact_Person 
 FROM AddressBook;
+
+drop table AddressBook;
+
+#UC11
+insert into AddressBook (first_name,last_name,address,city,state,zip,phone_number,email) values
+('Minal','Patil','Subhashnagar','Alibag','maharashtra',402108,5864764867,'minal@gmail.com');
+update  AddressBook set type='Friend' where id = 4;
+
 
 
 
